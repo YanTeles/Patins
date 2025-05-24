@@ -17,20 +17,20 @@
     --highlights: #000000;
     --background: #FAFAFA;
     
-    --ff-base:'Montserrat',sans-serif;
+    --ff-base:'Montserrat';
 
-    --text-sm:0.075rem;
+    --text-sm:0.875rem;
     --text-base: 1rem;
     --text-lg: 2.5rem;
     --text-xl:4rem;
 }
 
 html, button{
-    font: 500 1rem/1.5 'Montserrat', sans-serif;
+    font: 500 1rem/1.5 var(--ff-base);
 }
 
 h1,h2{
-    font-family: 'Syne,sans-serif';
+    font-family: 'Syne';
 }
 
 h1{
