@@ -7,8 +7,24 @@
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Snitap</title>
+  <meta name="description" content="Snitap - Patins de alta qualidade para sua vida mais radical e divertida. Encontre os melhores patins para seu estilo." />
+  <meta name="theme-color" content="#ffffff" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Snitap - Patins de Alta Qualidade" />
+  <meta property="og:description" content="Sua vida mais radical com Snitap" />
+  <meta property="og:image" content="Assets/Hero/patins-image.svg" />
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Snitap - Patins de Alta Qualidade" />
+  <meta name="twitter:description" content="Sua vida mais radical com Snitap" />
+  <meta name="twitter:image" content="Assets/Hero/patins-image.svg" />
+
+  <title>Snitap - Patins de Alta Qualidade</title>
   <link rel="stylesheet" href="Styles/index.css" />
+  <link rel="icon" type="image/svg+xml" href="Assets/logo.svg" />
 
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Montserrat:wght@500&family=Syne:wght@700&display=swap"
@@ -17,142 +33,141 @@
 
 <body>
   <header class="top">
-    <a href="#">
-      <img src="Assets/logo.svg" alt="">
+    <a href="#" aria-label="Página inicial Snitap">
+      <img src="Assets/logo.svg" alt="Logo Snitap">
     </a>
-    <a href="#">
-      <img src="Assets/Icons/shopping-bag-01.svg" alt="">
-      <span>1</span>
+    <a href="#" class="cart" aria-label="Carrinho de compras">
+      <img src="Assets/Icons/shopping-bag-01.svg" alt="Ícone do carrinho">
+      <span aria-label="1 item no carrinho">1</span>
     </a>
   </header>
 
-  <section class="hero">
-    <div>
-      <h1>
-        Snitap, sua vida mais
-        <div>
-          <span>radical</span>
-          <span>divertida</span>
-          <span>saudável</span>
-          <span>radical</span>
+  <main>
+    <section class="hero">
+      <div>
+        <h1>
+          Snitap, sua vida mais
+          <div class="rotating-words">
+            <span aria-hidden="true">radical</span>
+            <span aria-hidden="true">divertida</span>
+            <span aria-hidden="true">saudável</span>
+            <span aria-hidden="true">radical</span>
+          </div>
+        </h1>
 
+        <div class="buttons">
+          <a href="#" class="button shadow buy" aria-label="Comprar agora">
+            <img src="Assets/Icons/shopping-bag-01.svg" alt="Ícone de compra">
+            COMPRAR AGORA
+          </a>
+
+          <a href="#" class="button play" aria-label="Assistir vídeo demonstrativo">
+            <span class="shadow">
+              <img src="Assets/Icons/play.svg" alt="Ícone de play">
+            </span>
+            VEJA EM AÇÃO
+          </a>
         </div>
-      </h1>
-
-      <div class="buttons">
-        <a href="#" class="button shadow buy">
-          <img src="Assets/Icons/shopping-bag-01.svg" alt="">
-          COMPRAR AGORA
-        </a>
-
-        <a href="#" class="button play">
-          <span class="shadow">
-            <img src="Assets/Icons/play.svg" alt="">
-          </span>
-          VEJA EM AÇÃO
-        </a>
       </div>
-    </div>
 
-    <div>
+      <div class="hero-images">
+        <div class="content">
+          <img src="Assets/Hero/Ellipse.svg" alt="Elemento decorativo circular" aria-hidden="true">
+          <img src="Assets/Hero/patins-image.svg" alt="Patins Snitap em destaque" loading="eager">
+          <img src="Assets/Hero/Stars 1.svg" alt="Elemento decorativo estrelas" aria-hidden="true">
+          <img src="Assets/Hero/Stars 2.svg" alt="Elemento decorativo estrelas" aria-hidden="true">
+        </div>
+      </div>
+    </section>
+
+    <section class="banner" aria-label="Banner promocional">
+      <div class="scroller bg-gradient-animate">
+        <div class="rolling">
+          <img src="Assets/Images/banner.svg" alt="">
+          <img src="Assets/Images/banner.svg" alt="">
+          <img src="Assets/Images/banner.svg" alt="">
+          <img src="Assets/Images/banner.svg" alt="">
+          <img src="Assets/Images/banner.svg" alt="">
+          <img src="Assets/Images/banner.svg" alt="">
+          <img src="Assets/Images/banner.svg" alt="">
+          <img src="Assets/Images/banner.svg" alt="">
+          <img src="Assets/Images/banner.svg" alt="">
+          <img src="Assets/Images/banner.svg" alt="">
+          <img src="Assets/Images/banner.svg" alt="">
+          <img src="Assets/Images/banner.svg" alt="">
+          <img src="Assets/Images/banner.svg" alt="">
+          <img src="Assets/Images/banner.svg" alt="">
+          <img src="Assets/Images/banner.svg" alt="">
+          <img src="Assets/Images/banner.svg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery" aria-label="Galeria de fotos dos usuários">
+      <header>
+        <span>GALERIA DE FOTOS</span>
+        <h2>#usesnitap por ai</h2>
+      </header>
       <div class="content">
-<img src="Assets/Hero/Ellipse.svg" alt="">
-<img src="Assets/Hero/patins-image.svg" alt="">
-<img src="Assets/Hero/Stars 1.svg" alt="">
-<img src="Assets/Hero/Stars 2.svg" alt="">
-
-
+        <figure>
+          <img src="Assets/Images/01.png" alt="Usuário usando patins Snitap" loading="lazy">
+          <figcaption>
+            <img src="Assets/Images/person.svg" alt="Foto de perfil">
+            <span>@laviniapereira</span>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="Assets/Images/02.png" alt="Usuário usando patins Snitap" loading="lazy">
+          <figcaption>
+            <img src="Assets/Images/person.svg" alt="Foto de perfil">
+            <span>@laviniapereira</span>
+          </figcaption>
+        </figure>
+        <figure data-delay>
+          <img src="Assets/Images/03.png" alt="Usuário usando patins Snitap" loading="lazy">
+          <figcaption>
+            <img src="Assets/Images/person.svg" alt="Foto de perfil">
+            <span>@laviniapereira</span>
+          </figcaption>
+        </figure>
+        <figure data-delay>
+          <img src="Assets/Images/04.png" alt="Usuário usando patins Snitap" loading="lazy">
+          <figcaption>
+            <img src="Assets/Images/person.svg" alt="Foto de perfil">
+            <span>@laviniapereira</span>
+          </figcaption>
+        </figure>
       </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="logo">
+      <img src="Assets/logo.svg" alt="Logo Snitap">
+      <span>Snitap</span>
     </div>
 
-  </section>
-<section class="banner">
-  <div class="scroller bg-gradient-animate">
-    <div class="rolling">
-      <img src="Assets/Images/banner.svg" alt="">
-      <img src="Assets/Images/banner.svg" alt="">
-      <img src="Assets/Images/banner.svg" alt="">
-      <img src="Assets/Images/banner.svg" alt="">
-      <img src="Assets/Images/banner.svg" alt="">
-      <img src="Assets/Images/banner.svg" alt="">
-      <img src="Assets/Images/banner.svg" alt="">
-      <img src="Assets/Images/banner.svg" alt="">
-      <img src="Assets/Images/banner.svg" alt="">
-      <img src="Assets/Images/banner.svg" alt="">
-      <img src="Assets/Images/banner.svg" alt="">
-      <img src="Assets/Images/banner.svg" alt="">
-      <img src="Assets/Images/banner.svg" alt="">
-      <img src="Assets/Images/banner.svg" alt="">
-      <img src="Assets/Images/banner.svg" alt="">
-      <img src="Assets/Images/banner.svg" alt="">
+    <nav class="nav" aria-label="Links do rodapé">
+      <a href="#">Sobre</a>
+      <a href="#">Nossas Lojas</a>
+      <a href="#">Política de privacidade</a>
+    </nav>
+
+    <div class="social-links" aria-label="Redes sociais">
+      <a href="#" title="Instagram Snitap" aria-label="Siga-nos no Instagram">
+        <img src="Assets/Icons/instagram.svg" alt="Logo Instagram">
+      </a>
+      <a href="#" title="Facebook Snitap" aria-label="Siga-nos no Facebook">
+        <img src="Assets/Icons/facebook.svg" alt="Logo Facebook">
+      </a>
+      <a href="#" title="YouTube Snitap" aria-label="Inscreva-se no nosso canal do YouTube">
+        <img src="Assets/Icons/youtube.svg" alt="Logo YouTube">
+      </a>
+      <a href="#" title="TikTok Snitap" aria-label="Siga-nos no TikTok">
+        <img src="Assets/Icons/tiktok.svg" alt="Logo TikTok">
+      </a>
     </div>
-  </div>
-</section>
-
-<section class="gallery">
-  <header>
-    <span>GALERIA DE FOTOS</span>
-    <h2>#usesnitap por ai</h2>
-  </header>
-  <div class="content">
-    <figure >
-      <img src="Assets/Images/01.png" alt="">
-      <figcaption>
-        <img src="Assets/Images/person.svg" alt="">
-        <span>@laviniapereira</span>
-      </figcaption>
-    </figure>
-    <figure>
-      <img src="Assets/Images/02.png" alt="">
-      <figcaption>
-        <img src="Assets/Images/person.svg" alt="">
-        <span>@laviniapereira</span>
-      </figcaption>
-    </figure>
-    <figure data-delay>
-      <img src="Assets/Images/03.png" alt="">
-      <figcaption>
-        <img src="Assets/Images/person.svg" alt="">
-        <span>@laviniapereira</span>
-      </figcaption>
-    </figure>
-    <figure data-delay>
-      <img src="Assets/Images/04.png" alt="">
-      <figcaption>
-        <img src="Assets/Images/person.svg" alt="">
-        <span>@laviniapereira</span>
-      </figcaption>
-    </figure>
-  </div>
-</section>
-
-<footer>
-  <div class="logo">
-    <img src="Assets/logo.svg" alt="">
-    Snitap
-  </div>
-
-  <nav class="nav">
-    <a href="#">Sobre</a>
-    <a href="#">Nossas Lojas</a>
-    <a href="#">Política de privacidade</a>
-  </nav>
-
-<div class="social-links">
-  <a href="#" title="instagram">
-    <img src="Assets/Icons/instagram.svg" alt="">
-  </a>
-  <a href="#" title="facebook">
-    <img src="Assets/Icons/facebook.svg" alt="">
-  </a>
-  <a href="#" title="youtube">
-    <img src="Assets/Icons/youtube.svg" alt="">
-  </a>
-  <a href="#" title="tiktok">
-    <img src="Assets/Icons/tiktok.svg" alt="">
-  </a>
-</div>
-</footer>
+  </footer>
 
 </body>
 
