@@ -29,8 +29,17 @@ html, button{
     font: 500 1rem/1.5 var(--ff-base);
 }
 
-html{
-    zoom: .5;
+/* Removendo o zoom fixo e adicionando escala responsiva */
+@media (min-width: 1440px) {
+    html {
+        font-size: 112.5%; /* 18px */
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 87.5%; /* 14px */
+    }
 }
 
 h1,h2{

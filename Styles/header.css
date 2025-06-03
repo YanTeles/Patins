@@ -1,49 +1,92 @@
 header.top {
    max-width: 80rem;
    width: 100%;
-   padding: 1.25rem 2rem;
+   padding: 1.5rem 2rem;
    margin-inline: auto;
 
    display: flex;
    align-items: center;
    justify-content: space-between;
+   position: relative;
+   z-index: 100;
+}
 
-   img {
+/* Estilos base para as imagens */
+header.top img {
+   width: 2.5rem;
+   height: 2.5rem;
+   transition: transform 500ms;
+}
+
+header.top img[src*="logo"]:hover {
+   transform: rotate(90deg);
+}
+
+header.top img[src*="shopping"]:hover {
+   transform: rotate(-30deg);
+}
+
+/* Estilos para o link do carrinho */
+header.top a {
+   position: relative;
+   display: flex;
+   align-items: center;
+}
+
+header.top a.cart span {
+   font: 500 0.75rem/1 "Inter", sans-serif;
+   position: absolute;
+   top: -0.375rem;
+   right: -0.375rem;
+   background-color: var(--snitap-sun);
+   width: 1.25rem;
+   height: 1.25rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+}
+
+/* Media queries para dispositivos médios */
+@media (max-width: 1024px) {
+   header.top {
+      padding: 1.25rem 1.5rem;
+   }
+
+   header.top img {
+      width: 2.25rem;
+      height: 2.25rem;
+   }
+}
+
+/* Media queries para tablets */
+@media (max-width: 768px) {
+   header.top {
+      padding: 1rem;
+   }
+
+   header.top img {
       width: 2rem;
       height: 2rem;
+   }
+}
 
-      transition: transform 500ms;
+/* Media queries para dispositivos móveis */
+@media (max-width: 480px) {
+   header.top {
+      padding: 0.75rem 1rem;
    }
 
-   img[src*="logo"]:hover {
-      transform: rotate(90deg);
+   header.top img {
+      width: 1.75rem;
+      height: 1.75rem;
    }
 
-   img[src*="shopping"]:hover {
-      transform: rotate(-30deg);
+   header.top a.cart span {
+      width: 1.125rem;
+      height: 1.125rem;
+      font-size: 0.625rem;
+      top: -0.25rem;
+      right: -0.25rem;
    }
-
-   a {
-      position: relative;
-   }
-
-   a span {
-      font: 500 0.75rem/1.3 "Inter", sans-serif;
-
-      position: absolute;
-      top: -0.5rem;
-      right: -0.5rem;
-
-      background-color: var(--snitap-sun);
-
-      width: 1.25rem;
-      height: 1.25rem;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      border-radius: 50%;
-   }
-
 }

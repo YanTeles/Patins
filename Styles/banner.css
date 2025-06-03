@@ -12,8 +12,7 @@
     .rolling{
         display: flex;
         gap: 1.5rem;
-
-        animation: rolling 2s linear infinite;
+        animation: rolling 20s linear infinite;
     }
 
     .bg-gradient-animate{
@@ -23,8 +22,48 @@
             );
             background-size: 400%;
             background-position:  0 50%;
-
             animation: bg-gradient 20s ease infinite;
+    }
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .banner {
+        padding-block: 2rem;
+
+        .rolling {
+            gap: 1.25rem;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .banner {
+        padding-block: 1.5rem;
+
+        .scroller {
+            padding-block: 0.75rem;
+        }
+
+        .rolling {
+            gap: 1rem;
+            animation-duration: 15s;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        padding-block: 1rem;
+
+        .scroller {
+            padding-block: 0.5rem;
+        }
+
+        .rolling {
+            gap: 0.75rem;
+            animation-duration: 12s;
+        }
     }
 }
 
@@ -35,7 +74,7 @@
 }
 
 @keyframes rolling{
-to{
-    transform: translateX(-132px);
-}
+    to {
+        transform: translateX(calc(-100% - 1.5rem));
+    }
 }
